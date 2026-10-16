@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { randomUUID } from "node:crypto";
-import type { FormRecord, Question, Submission } from "../../src/lib/types";
+import type { FormRecord, Question } from "../../src/lib/types";
 
 const base = process.env.TEST_BASE_URL || "http://127.0.0.1:3000";
 type ApiForm = FormRecord & { draft_revision: string };

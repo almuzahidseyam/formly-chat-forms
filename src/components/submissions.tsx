@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, Download, Inbox, Search } from "lucide-react";
 import type { FormRecord, Submission } from "@/lib/types";
-import { formatDate } from "@/lib/client";
 import { Modal, Timestamp } from "./ui";
 
 export function Submissions({

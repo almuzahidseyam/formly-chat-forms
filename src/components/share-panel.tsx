@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Check, Code2, Copy, Globe, Link2 } from "lucide-react";
 import type { FormRecord } from "@/lib/types";
-import { Button, Notice } from "./ui";
+import { Notice } from "./ui";
 
 export function SharePanel({ form }: { form: FormRecord }) {
   const [origin, setOrigin] = useState("");

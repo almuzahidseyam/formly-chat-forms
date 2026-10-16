@@ -46,9 +46,14 @@ export function ChatForm({
   } as CSSProperties;
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
-    if (started && question && !["yes_no", "multiple_choice"].includes(question.type))
+    if (
+      started &&
+      question &&
+      !(preview && autoStart && step === 0) &&
+      !["yes_no", "multiple_choice"].includes(question.type)
+    )
       inputRef.current?.focus({ preventScroll: true });
-  }, [step, started, done, question]);
+  }, [step, started, done, question, preview, autoStart]);
   useEffect(() => {
     if (!embedded) return;
     const closeOnEscape = (event: KeyboardEvent) => {

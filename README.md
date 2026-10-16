@@ -42,6 +42,8 @@ The demo creates an isolated workspace per visitor, with three templates and cle
 
 No generative AI, payments, subscriptions or advanced integrations are used.
 
+![Mobile landing page](docs/screenshots/landing-mobile.jpg)
+
 ## Stack
 
 - **Frontend:** Next.js 16 App Router, React 19, TypeScript

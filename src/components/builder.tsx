@@ -7,7 +7,6 @@ import {
   ArrowLeft,
   ArrowUp,
   Check,
-  ChevronDown,
   Copy,
   Eye,
   FileText,
@@ -26,13 +25,7 @@ import {
   X,
 } from "lucide-react";
 import { api, stableJson } from "@/lib/client";
-import {
-  DEFAULT_SETTINGS,
-  QUESTION_LABELS,
-  type FormRecord,
-  type Question,
-  type QuestionType,
-} from "@/lib/types";
+import { QUESTION_LABELS, type FormRecord, type Question, type QuestionType } from "@/lib/types";
 import { ChatForm } from "./chat-form";
 import { SharePanel } from "./share-panel";
 import { Button, Modal, Notice } from "./ui";
@@ -649,7 +642,11 @@ export function Builder({ initialForm }: { initialForm: EditableForm }) {
             </button>
           </div>
           <div className="preview-chat-frame">
-            <ChatForm key={previewKey} form={form} preview />
+            <ChatForm
+              key={`${previewKey}:${form.questions.map((q) => `${q.id}:${q.type}`).join("|")}`}
+              form={form}
+              preview
+            />
           </div>
           <p>
             <Eye size={13} />

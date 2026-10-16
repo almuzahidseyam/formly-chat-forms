@@ -20,7 +20,7 @@ import {
   Sparkles,
   Trash2,
 } from "lucide-react";
-import { api, formatDate } from "@/lib/client";
+import { api } from "@/lib/client";
 import { TEMPLATES } from "@/lib/templates";
 import type { FormRecord } from "@/lib/types";
 import { Button, Modal, Notice, Timestamp } from "./ui";
