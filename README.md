@@ -166,7 +166,7 @@ Landing / Dashboard / Builder       External website
               users · sessions · forms · submissions
 ```
 
-See [Architecture and decisions](docs/ARCHITECTURE.md), [reviewer demo steps](docs/REVIEWER_GUIDE.md), and [বাংলায় interview প্রস্তুতি](docs/INTERVIEW_GUIDE.bn.md).
+See [Architecture and decisions](docs/ARCHITECTURE.md) and the [reviewer walkthrough](docs/REVIEWER_GUIDE.md).
 
 ### Data integrity and security details
 

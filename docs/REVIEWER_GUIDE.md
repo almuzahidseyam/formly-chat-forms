@@ -26,13 +26,10 @@ Edit a question and **Save draft**. The public form should still show the publis
 
 For ownership checks, create two separate accounts. One cannot access the other's builder, forms or submission API. The automated integration suite covers these cases.
 
-## Submission links
+## Reference links
 
 - Live application: https://formly-chat-forms.vercel.app
 - Public GitHub repository: https://github.com/almuzahidseyam/formly-chat-forms
 - Demo workspace: https://formly-chat-forms.vercel.app/demo
 - Independent widget host: https://formly-widget-test.vercel.app
 
-## Suggested submission description
-
-Formly is a full-stack conversational form builder built with Next.js, React, TypeScript, Tailwind CSS and PostgreSQL. It includes an authenticated dashboard, four question types, editing/reordering, required fields, interactive preview, publish/unpublish, unique public links, a customizable floating chatbot widget, and database-backed submissions with timestamps. A separate deployed website demonstrates cross-origin JavaScript embedding. The repository includes setup instructions, architecture decisions, automated tests and GitHub Actions checks. No AI features, payments or subscriptions are included.
